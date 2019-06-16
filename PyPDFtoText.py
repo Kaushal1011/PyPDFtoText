@@ -1,3 +1,10 @@
+'''
+This is Python script that converts any PDF to text using tesseract-OCR. I made this to process pdfs in which text is not selectable.
+Please donot use on normal pdfs of which you can just copy out text as this is a heavy to process and slowtask
+author: Kaushal Patil
+'''
+
+
 import os
 import fitz
 import pytesseract
