@@ -13,13 +13,13 @@ from PIL import Image as img
 
 def main():
     """ main function """
-    print("Enter the name of Pdf File You want to convert to text: example "+"newwork.pdf")
+    print("Enter the name of Pdf File (with Path if its not in Work Directory) You want to convert to text: example "+"newwork.pdf")
     filename = str(input())  # name of pdf file you want to render
     N = 0
     # render with PyMuPDF
     doc = fitz.open(filename)
     N = doc.pageCount
-    print("Enter the name of text file where you want to save")
+    print("Enter the name of text file (with path if its not in Work Directory) where you want to save")
     filetext = open(str(input())+".txt", "a")
     print("You May Enjoy a Coffee while the application converts all of pdf into text")
     for i in range(N):
